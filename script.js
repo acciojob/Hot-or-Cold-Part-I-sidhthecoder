@@ -1,6 +1,6 @@
 // generate a random number between 1 and 100
 const secretNumber = Math.floor(Math.random() * 100) + 1;
-
+var btn = document.getElementById("btn");
 // initialize previous guess and difference
 let previousGuess = 0;
 let previousDifference = 0;
@@ -37,3 +37,4 @@ function checkGuess() {
   previousGuess = guess;
   previousDifference = difference;
 }
+btn.addEventListener("click",checkGuess);
